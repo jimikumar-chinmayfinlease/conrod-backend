@@ -7,6 +7,6 @@ export default new DataSource({
       host:'localhost',
       port: 5432,
       database: 'postgres',
-      entities: ['dist/domain/**/*.entity.js'],
+      entities: ['dist/domain/**/*.entity.js'], //
       migrations: ['dist/database/migrations/*.js'],
 });
