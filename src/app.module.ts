@@ -4,9 +4,10 @@ import { Module } from '@nestjs/common';
 import { CommonModule } from './common/common.module';
 import { DatabaseModule } from './database/database.module';
 import { UsersModule } from 'users/users.module';
+import { EnvModule } from './env/env.module';
 
 @Module({
-  imports: [UsersModule, CommonModule, DatabaseModule],
+  imports: [UsersModule, CommonModule, DatabaseModule, EnvModule],
 
 })
 export class AppModule { }

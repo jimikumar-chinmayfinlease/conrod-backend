@@ -5,4 +5,4 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: root
+      POSTGRES_PASSWORD: ${DATASOURCE_PASSWORD}
